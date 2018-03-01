@@ -14,6 +14,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <ctime>
+#include <cstring>
 #include "String.hpp"
 
 using namespace std;
@@ -38,9 +39,9 @@ int main(int argc, char** argv) {
      
     cout<< asdf.getAsChars()<<" ," <<asdf.getLength()<<" znaky"  <<endl; 
     
-    //celek=asdf+qwer;
+    celek=asdf+qwer;
     
-    //cout<< celek.getAsChars()<<" ," <<asdf.getLength()<<" znaky"  <<endl;
+    cout<< celek.getAsChars()<<" ," <<asdf.getLength()<<" znaky"  <<endl;
     
     return 0;
 }

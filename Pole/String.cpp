@@ -13,6 +13,8 @@
 
 #include "String.hpp"
 #include <cstring>
+#include <cstdlib>
+#include <iostream>
 
 
 String::String() {
@@ -103,11 +105,7 @@ const String String::operator +=(const String& string){
 }
 
 const String String::operator +(char* chars){
-   /*
-    Pole temp(*this);
-    temp+=chars;
-    return temp;
-    */
+  
 }
 
 const String String::operator +(const String& string){
