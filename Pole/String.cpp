@@ -105,12 +105,15 @@ const String String::operator +=(const String& string){
 }
 
 const String String::operator +(char* chars){
-  
+    String temp("");
+    temp+= chars;
+    return temp;
 }
 
 const String String::operator +(const String& string){
-    String temp(*this);
-    temp+=string;
+    String temp("");
+    temp+=this->getAsChars();
+    temp+= string.getAsChars();
     return temp;
 }
 
